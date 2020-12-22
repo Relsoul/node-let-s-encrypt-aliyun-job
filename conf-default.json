@@ -1,0 +1,36 @@
+{
+  "confData": [
+    {
+      "name": "xx域名相关",
+      "ali": {
+        "accessKeyId": "accessKeyId",
+        "accessKeySecret": "accessKeySecret",
+        "domain": "xx.cn",
+        "cdn":{
+          "domain": ["xx.cn","www.xx.cn"]
+        }
+      },
+      "contact": [
+        "mailto:soul@xx.cn"
+      ],
+      "identifiers": [
+        "xx.cn",
+        "*.xx.cn"
+      ],
+      "cName": "xx.cn",
+      "sftpUploadPath": "/etc/letsencrypt-ssl-list",
+      "sftp": {
+        "host": "host",
+        "username": "username",
+        "password": "password",
+        "execShell": "lnmp restart"
+      },
+      "time": "2020-12-10"
+    }
+  ],
+  "accountUrl": false,
+  "contact": [
+    "mailto:soul@xx.cn"
+  ],
+  "sleepTime": 300000
+}
