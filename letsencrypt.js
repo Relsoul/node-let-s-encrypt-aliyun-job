@@ -147,7 +147,7 @@ async function run(conf) {
         accountUrl = await client.getAccountUrl();
         // 写入accountUrl
         confList.accountUrl = accountUrl;
-        await fs.writeJson('./conf.json', confList,2);
+        await fs.writeJson('./conf.json', confList,{spaces:2});
         console.log('写入账号url成功')
     }else{
         console.log('拥有账号，开始初始化客户端');
@@ -283,7 +283,7 @@ async function run(conf) {
 
     conf.time = moment().format('YYYY-MM-DD');
     // 记录写入时间
-    await fs.writeJson('./conf.json', confList,2)
+    await fs.writeJson('./conf.json', confList,{spaces:2})
 
     console.log('更新conf.json成功');
     return Promise.resolve(true);
